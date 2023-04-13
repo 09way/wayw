@@ -1,0 +1,82 @@
+- Device platform: arm64-v8a
+- Installing: 23.0 (23000)
+- Copying image to cache
+Parsing boot image: [/data/user_de/0/com.topjohnwu.magisk/install/boot.img]
+HEADER_VER      [1]
+KERNEL_SZ       [13708623]
+RAMDISK_SZ      [19983996]
+- Unpacking boot image
+SECOND_SZ       [0]
+RECOV_DTBO_SZ   [257498]
+OS_VERSION      [16.1.0]
+OS_PATCH_LEVEL  [2099-12]
+PAGESIZE        [4096]
+NAME            []
+CMDLINE         [androidboot.hardware=qcom androidboot.console=ttyMSM0 msm_rtb.filter=0x237 ehci-hcd.park=3 service_locator.enable=1 androidboot.memcg=1 earlycon=msm_geni_serial,0x880000 usbcore.autosuspend=7 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 androidboot.selinux=permissive buildvariant=eng]
+CHECKSUM        [c850d55de8df26fadbcc41c71552fb5f09e8ca6a000000000000000000000000]
+KERNEL_DTB_SZ   [387986]
+KERNEL_FMT      [gzip]
+RAMDISK_FMT     [gzip]
+VBMETA
+- Checking ramdisk status
+Loading cpio: [ramdisk.cpio]
+- Stock boot image detected
+- Patching ramdisk
+Loading cpio: [ramdisk.cpio]
+Add entry [init] (0750)
+Create directory [overlay.d] (0750)
+Create directory [overlay.d/sbin] (0750)
+Add entry [overlay.d/sbin/magisk32.xz] (0644)
+Add entry [overlay.d/sbin/magisk64.xz] (0644)
+Patch with flag KEEPVERITY=[true] KEEPFORCEENCRYPT=[true]
+Loading cpio: [ramdisk.cpio.orig]
+Backup mismatch entry: [init] -> [.backup/init]
+Record new entry: [overlay.d] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin/magisk32.xz] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin/magisk64.xz] -> [.backup/.rmlist]
+Create directory [.backup] (0000)
+Add entry [.backup/.magisk] (0000)
+Dump cpio: [ramdisk.cpio]
+Loading dtbs from [kernel_dtb]
+Patch @ 01E408D0 [736B69705F696E697472616D667300] -> [77616E745F696E697472616D667300]
+- Repacking boot image
+Parsing boot image: [/data/user_de/0/com.topjohnwu.magisk/install/boot.img]
+HEADER_VER      [1]
+KERNEL_SZ       [13708623]
+RAMDISK_SZ      [19983996]
+SECOND_SZ       [0]
+RECOV_DTBO_SZ   [257498]
+OS_VERSION      [16.1.0]
+OS_PATCH_LEVEL  [2099-12]
+PAGESIZE        [4096]
+NAME            []
+CMDLINE         [androidboot.hardware=qcom androidboot.console=ttyMSM0 msm_rtb.filter=0x237 ehci-hcd.park=3 service_locator.enable=1 androidboot.memcg=1 earlycon=msm_geni_serial,0x880000 usbcore.autosuspend=7 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 androidboot.selinux=permissive buildvariant=eng]
+CHECKSUM        [c850d55de8df26fadbcc41c71552fb5f09e8ca6a000000000000000000000000]
+KERNEL_DTB_SZ   [387986]
+KERNEL_FMT      [gzip]
+RAMDISK_FMT     [gzip]
+VBMETA
+Repack to boot image: [new-boot.img]
+HEADER_VER      [1]
+KERNEL_SZ       [13711749]
+RAMDISK_SZ      [20210212]
+SECOND_SZ       [0]
+RECOV_DTBO_SZ   [257498]
+OS_VERSION      [16.1.0]
+OS_PATCH_LEVEL  [2099-12]
+PAGESIZE        [4096]
+NAME            []
+CMDLINE         [androidboot.hardware=qcom androidboot.console=ttyMSM0 msm_rtb.filter=0x237 ehci-hcd.park=3 service_locator.enable=1 androidboot.memcg=1 earlycon=msm_geni_serial,0x880000 usbcore.autosuspend=7 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 androidboot.selinux=permissive buildvariant=eng]
+CHECKSUM        [9693366d3bf64f805f610ef323b2274c5a14dcfc000000000000000000000000]
+
+****************************
+ Output file is written to 
+ /storage/emulated/0/Download/magisk_patched-23000_nIKMT.img 
+****************************
+cp: can't preserve ownership of 'busybox': Operation not permitted
+cp: can't preserve ownership of 'magisk32': Operation not permitted
+cp: can't preserve ownership of 'magisk64': Operation not permitted
+cp: can't preserve ownership of 'magiskboot': Operation not permitted
+cp: can't preserve ownership of 'magiskinit': Operation not permitted
+- All done!
